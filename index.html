@@ -21,7 +21,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -36,18 +37,21 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
                         tea time at The <br> Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">
+                        Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm " />
+                    <img src="images/banner.png" class=" " />
                     <!-- Rating badge  -->
                     <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-56">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -135,7 +139,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class=" flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl text-white font-extrabold">Meet Our Super <br> Clients
@@ -144,7 +148,7 @@
                         majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn text-orange-500 btn-white">Show All</button>
                 </div>
 
             </div>
@@ -191,19 +195,20 @@
         <!-- News & event -->
         <section class="my-24">
             <h2 class="text-5xl font-extrabold text-center mb-5">News & Events</h2>
-            <p class="text-center lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            <p class="text-center lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration
                 in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
 
-             <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- first card -->
                 <div class="card p-8 border-2 ">
                     <figure><img src="images/news-1.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <p>Feb 05, 2027</p>
-                      <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <h4 class=" font-bold">Learn More</h4>
-                      
+                        <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h4 class=" font-bold">Learn More</h4>
+
                     </div>
                 </div>
                 <!-- second card -->
@@ -211,10 +216,10 @@
                     <figure><img src="images/news-2.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <p>Feb 05, 2027</p>
-                      <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <h4 class=" font-bold">Learn More</h4>
-                      
+                        <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h4 class=" font-bold">Learn More</h4>
+
                     </div>
                 </div>
                 <!-- third card -->
@@ -222,17 +227,63 @@
                     <figure><img src="images/news-3.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <p>Feb 05, 2027</p>
-                      <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <h4 class=" font-bold">Learn More</h4>
-                      
+                        <h2 class="text-xl font-bold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h4 class=" font-bold">Learn More</h4>
+
                     </div>
                 </div>
-             </div>   
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content bg-gradient-to-r from-[#FF00001A] to-[#FF89381A]">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn text-white  bg-gradient-to-r from-gradient-start to-gradient-end">Get strated</button>
+            </p>
+        </div>
+        <div class="footer">
+            <div>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button
+                            class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i
+                                class="fa-solid fa-chevron-right "></i></button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="text-center mt-10">
+            <p>© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
